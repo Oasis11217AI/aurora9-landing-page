@@ -1,2 +1,3 @@
 # aurora9-landing-page
-Aurora9: Be Among the First to Experience Autonomous E-Commerce. This landing page is designed to collect email addresses from businesses eager to join the waitlist for our AI-powered platform that's revolutionizing online sales. Get notified when the future of e-commerce launches!
+AURORA9: Be Among the First to Experience Autonomous E-Commerce. 
+AURORA9: Building the future of e-commerce with a fully autonomous AI workforce. Our platform deploys intelligent agents for marketing, inventory, UX/UI, SEO, data analytics, and more, driving growth on major marketplaces, like Amazon, Walmart,eBay, Shopify and more.
