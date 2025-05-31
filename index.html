@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About AURORA9</title>
+    <title>AURORA9: The Autonomous AI Workforce for E-commerce Growth - Join Waiting List</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -32,9 +32,656 @@
             margin-right: 0.5em;
             fill: currentColor;
         }
-        /* Header navigation styling */
-        .header-nav-link {
-            @apply text-white hover:text-indigo-200 transition-colors duration-200 px-3 py-2 rounded-md text-base font-medium;
+
+        /* MailerLite specific styles - integrated for aesthetic consistency */
+        /* These styles override some MailerLite defaults to better match the existing design */
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper {
+            background-color: transparent !important; /* Make background transparent to use parent card style */
+            border-width: 0px !important; /* Remove MailerLite default border */
+            box-shadow: none !important; /* Remove MailerLite default shadow */
+            padding: 0 !important;
+            max-width: 100% !important; /* Ensure it's fully responsive */
+            width: 100% !important; /* Ensure it's fully responsive */
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper.embedPopup,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper.embedDefault {
+            width: 100% !important; /* Ensure full width on all embed types */
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody {
+            padding: 0 !important; /* Remove default padding to let parent handle it */
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input {
+            background-color: #ffffff !important;
+            color: #333333 !important;
+            border-color: #cccccc !important;
+            border-radius: 9999px !important; /* Rounded-full equivalent */
+            border-width: 1px !important;
+            padding: 12px 20px !important; /* Adjusted padding for better look */
+            font-size: 16px !important; /* Slightly larger font */
+            line-height: 1.5 !important;
+            box-shadow: none !important; /* Remove any default box-shadow */
+            transition: all 0.2s ease-in-out; /* Add transition for focus effect */
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input:focus,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:focus {
+            outline: none !important;
+            border-color: #6366f1 !important; /* Indigo-500 on focus */
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.4) !important; /* Ring effect */
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
+            background-color: #6366f1 !important; /* Indigo-600 */
+            border-color: #6366f1 !important;
+            border-radius: 9999px !important; /* Rounded-full equivalent */
+            color: #ffffff !important;
+            font-weight: 600 !important; /* Semibold */
+            padding: 16px 32px !important; /* Larger padding for button */
+            font-size: 16px !important;
+            transition: all 0.3s ease-in-out !important;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* Shadow-lg equivalent */
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover {
+            background-color: #4f46e5 !important; /* Indigo-700 */
+            border-color: #4f46e5 !important;
+        }
+
+        /* Adjust MailerLite's default text styles to match Inter font and existing colors */
+        #mlb2-26652325.ml-form-embedContainer h4,
+        #mlb2-26652325.ml-form-embedContainer p,
+        #mlb2-26652325.ml-form-embedContainer span,
+        #mlb2-26652325.ml-form-embedContainer label {
+            font-family: 'Inter', sans-serif !important;
+            color: #1e293b !important; /* Dark slate text */
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p {
+            font-size: 18px !important; /* Larger paragraph text */
+            line-height: 1.75 !important;
+            text-align: center !important; /* Center align text in the form */
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow label {
+            font-size: 14px !important;
+            font-weight: 500 !important; /* Medium weight */
+            text-align: center !important; /* Center align labels */
+            width: 100%; /* Ensure label takes full width */
+            display: block; /* Ensure label is block level */
+        }
+
+        /* Loader and reCAPTCHA adjustments */
+        .ml-form-embedSubmitLoad:after {
+            border-color: #6366f1 #6366f1 #6366f1 transparent !important; /* Match primary color */
+        }
+
+        .g-recaptcha {
+            margin: 20px auto; /* Center reCAPTCHA */
+            display: block;
+        }
+
+        /* Responsive adjustments for MailerLite form */
+        @media only screen and (max-width: 640px) { /* Equivalent to sm breakpoint */
+            #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper.embedDefault,
+            #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper.embedPopup,
+            #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper.embedForm {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .ml-form-formContent.horozintalForm .ml-form-horizontalRow {
+                flex-direction: column; /* Stack input and button on small screens */
+                align-items: center;
+            }
+            .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal,
+            .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal {
+                width: 100% !important; /* Full width for stacked elements */
+                margin-bottom: 10px; /* Add space between stacked elements */
+            }
+            .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal.labelsOn {
+                padding-top: 0; /* Remove extra padding if labels are stacked */
+            }
+        }
+
+        /* Additional MailerLite CSS provided by user */
+        @import url("https://assets.mlcdn.com/fonts.css?version=1748530");
+        /* LOADER */
+        .ml-form-embedSubmitLoad {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+        }
+
+        .g-recaptcha {
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            transform-origin: 0 0;
+            -webkit-transform-origin: 0 0;
+            height: ;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+
+        .ml-form-embedSubmitLoad:after {
+            content: " ";
+            display: block;
+            width: 11px;
+            height: 11px;
+            margin: 1px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            border-color: #ffffff #ffffff #ffffff transparent;
+            animation: ml-form-embedSubmitLoad 1.2s linear infinite;
+        }
+        @keyframes ml-form-embedSubmitLoad {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        #mlb2-26652325.ml-form-embedContainer {
+            box-sizing: border-box;
+            display: table;
+            margin: 0 auto;
+            position: static;
+            width: 100% !important;
+        }
+        #mlb2-26652325.ml-form-embedContainer h4,
+        #mlb2-26652325.ml-form-embedContainer p,
+        #mlb2-26652325.ml-form-embedContainer span,
+        #mlb2-26652325.ml-form-embedContainer button {
+            text-transform: none !important;
+            letter-spacing: normal !important;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper {
+            background-color: #f6f6f6;
+
+            border-width: 0px;
+            border-color: transparent;
+            border-radius: 4px;
+            border-style: solid;
+            box-sizing: border-box;
+            display: inline-block !important;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper.embedPopup,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper.embedDefault { width: 400px; }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper.embedForm { max-width: 400px; width: 100%; }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-align-left { text-align: left; }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-align-center { text-align: center; }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-align-default { display: table-cell !important; vertical-align: middle !important; text-align: center !important; }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-align-right { text-align: right; }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedHeader img {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            height: auto;
+            margin: 0 auto !important;
+            max-width: 100%;
+            width: undefinedpx;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+            padding: 20px 20px 0 20px;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody.ml-form-embedBodyHorizontal {
+            padding-bottom: 0;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent {
+            text-align: left;
+            margin: 0 0 20px 0;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent h4,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4 {
+            color: #000000;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            font-weight: 400;
+            margin: 0 0 10px 0;
+            text-align: left;
+            word-break: break-word;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p {
+            color: #000000;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            margin: 0 0 10px 0;
+            text-align: left;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ul,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ol,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ul,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ol {
+            color: #000000;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ol ol,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ol ol {
+            list-style-type: lower-alpha;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ol ol ol,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ol ol ol {
+            list-style-type: lower-roman;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p a,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p a {
+            color: #000000;
+            text-decoration: underline;
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-field-group {
+            text-align: left!important;
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-field-group label {
+            margin-bottom: 5px;
+            color: #333333;
+            font-size: 14px;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            font-weight: bold; font-style: normal; text-decoration: none;;
+            display: inline-block;
+            line-height: 20px;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p:last-child,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p:last-child {
+            margin: 0;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody form {
+            margin: 0;
+            width: 100%;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow {
+            margin: 0 0 20px 0;
+            width: 100%;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow {
+            float: left;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent.horozintalForm {
+            margin: 0;
+            padding: 0 0 20px 0;
+            width: 100%;
+            height: auto;
+            float: left;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow {
+            margin: 0 0 10px 0;
+            width: 100%;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow.ml-last-item {
+            margin: 0;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow.ml-formfieldHorizintal {
+            margin: 0;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input {
+            background-color: #ffffff !important;
+            color: #333333 !important;
+            border-color: #cccccc;
+            border-radius: 4px !important;
+            border-style: solid !important;
+            border-width: 1px !important;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            font-size: 14px !important;
+            height: auto;
+            line-height: 21px !important;
+            margin-bottom: 0;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 10px 10px !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
+            max-width: 100% !important;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input::-webkit-input-placeholder,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::-webkit-input-placeholder { color: #333333; }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input::-moz-placeholder,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::-moz-placeholder { color: #333333; }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input:-ms-input-placeholder,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:-ms-input-placeholder { color: #333333; }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input:-moz-placeholder,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:-moz-placeholder { color: #333333; }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow textarea, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow textarea {
+            background-color: #ffffff !important;
+            color: #333333 !important;
+            border-color: #cccccc;
+            border-radius: 4px !important;
+            border-style: solid !important;
+            border-width: 1px !important;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            font-size: 14px !important;
+            height: auto;
+            line-height: 21px !important;
+            margin-bottom: 0;
+            margin-top: 0;
+            padding: 10px 10px !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
+            max-width: 100% !important;
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before {
+            border-color: #cccccc!important;
+            background-color: #ffffff!important;
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input.custom-control-input[type="checkbox"]{
+            box-sizing: border-box;
+            padding: 0;
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            margin-top: 5px;
+            margin-left: -1.5rem;
+            overflow: visible;
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before {
+            border-radius: 4px!important;
+        }
+
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type=checkbox]:checked~.label-description::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox input[type=checkbox]:checked~.label-description::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input:checked~.custom-control-label::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input:checked~.custom-control-label::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox input[type=checkbox]:checked~.label-description::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input:checked~.custom-control-label::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input:checked~.custom-control-label::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input:checked~.custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-input:checked~.custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input:checked~.custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input:checked~.custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox input[type=checkbox]:checked~.label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox input[type=checkbox]:checked~.label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type=checkbox]:checked~.label-description::before {
+            border-color: #000000!important;
+            background-color: #000000!important;
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::after {
+            top: 2px;
+            box-sizing: border-box;
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before {
+            position: absolute;
+            top: 4px;
+            left: -1.5rem;
+            display: block;
+            width: 16px;
+            height: 16px;
+            pointer-events: none;
+            content: "";
+            background-color: #ffffff;
+            border: #adb5bd solid 1px;
+            border-radius: 50%;
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::after {
+            position: absolute;
+            top: 0px!important;
+            left: -1.5rem;
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            content: "";
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
+            position: absolute;
+            top: 0px!important;
+            left: -1.5rem;
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            content: "";
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-radio .custom-control-label::after {
+            background: no-repeat 50%/50% 50%;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-checkbox .custom-control-label::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
+            background: no-repeat 50%/50% 50%;
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-control, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-control {
+            position: relative;
+            display: block;
+            min-height: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-input, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label {
+            color: #000000;
+            font-size: 12px!important;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            line-height: 22px;
+            margin-bottom: 0;
+            position: relative;
+            vertical-align: top;
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-select, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-select {
+            background-color: #ffffff !important;
+            color: #333333 !important;
+            border-color: #cccccc;
+            border-radius: 4px !important;
+            border-style: solid !important;
+            border-width: 1px !important;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            font-size: 14px !important;
+            line-height: 20px !important;
+            margin-bottom: 0;
+            margin-top: 0;
+            padding: 10px 28px 10px 12px !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
+            max-width: 100% !important;
+            height: auto;
+            display: inline-block;
+            vertical-align: middle;
+            background: url('https://assets.mlcdn.com/ml/images/default/dropdown.svg') no-repeat right .75rem center/8px 10px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow {
+            height: auto;
+            width: 100%;
+            float: left;
+        }
+        .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal { width: 70%; float: left; }
+        .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal { width: 30%; float: left; }
+        .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal.labelsOn { padding-top: 25px; }
+        .ml-form-formContent.horozintalForm .mlhorizontal-fields { box-sizing: border-box; float: left; padding-right: 10px; }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input {
+            background-color: #ffffff;
+            color: #333333;
+            border-color: #cccccc;
+            border-radius: 4px;
+            border-style: solid;
+            border-width: 1px;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 0;
+            margin-top: 0;
+            padding: 10px 10px;
+            width: 100%;
+            box-sizing: border-box;
+            overflow-y: initial;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button {
+            background-color: #000000 !important;
+            border-color: #000000;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 4px;
+            box-shadow: none;
+            color: #ffffff !important;
+            cursor: pointer;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            font-size: 14px !important;
+            font-weight: 700;
+            line-height: 20px;
+            margin: 0 !important;
+            padding: 10px !important;
+            width: 100%;
+            height: auto;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover {
+            background-color: #333333 !important;
+            border-color: #333333 !important;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type="checkbox"] {
+            box-sizing: border-box;
+            padding: 0;
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            margin-top: 5px;
+            margin-left: -1.5rem;
+            overflow: visible;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description {
+            color: #000000;
+            display: block;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            text-align: left;
+            margin-bottom: 0;
+            position: relative;
+            vertical-align: top;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label {
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            display: block;
+            min-height: 24px;
+            padding-left: 24px;
+
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label a {
+            color: #000000;
+            text-decoration: underline;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label p {
+            color: #000000 !important;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+            font-size: 12px !important;
+            font-weight: normal !important;
+            line-height: 18px !important;
+            padding: 0 !important;
+            margin: 0 5px 0 0 !important;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label p:last-child {
+            margin: 0;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit {
+            margin: 0 0 20px 0;
+            float: left;
+            width: 100%;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
+            background-color: #000000 !important;
+            border: none !important;
+            border-radius: 4px !important;
+            box-shadow: none !important;
+            color: #ffffff !important;
+            cursor: pointer;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+            font-size: 14px !important;
+            font-weight: 700 !important;
+            line-height: 21px !important;
+            height: auto;
+            padding: 10px !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button.loading {
+            display: none;
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover {
+            background-color: #333333 !important;
+            border-color: #333333 !important;
+        }
+        .ml-subscribe-close {
+            width: 30px;
+            height: 30px;
+            background: url('https://assets.mlcdn.com/ml/images/default/modal_close.png') no-repeat;
+            background-size: 30px;
+            cursor: pointer;
+            margin-top: -10px;
+            margin-right: -10px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .ml-error input, .ml-error textarea, .ml-error select {
+            border-color: red!important;
+        }
+
+        .ml-error .custom-checkbox-radio-list {
+            border: 1px solid red !important;
+            border-radius: 4px;
+            padding: 10px;
+        }
+
+        .ml-error .label-description,
+        .ml-error .label-description p,
+        .ml-error .label-description p a,
+        .ml-error label:first-child {
+            color: #ff0000 !important;
+        }
+
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow.ml-error .label-description p,
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow.ml-error .label-description p:first-letter {
+            color: #ff0000 !important;
+        }
+        @media only screen and (max-width: 400px){
+
+            .ml-form-embedWrapper.embedDefault, .ml-form-embedWrapper.embedPopup { width: 100%!important; }
+            .ml-form-formContent.horozintalForm { float: left!important; }
+            .ml-form-formContent.horozintalForm .ml-form-horizontalRow { height: auto!important; width: 100%!important; float: left!important; }
+            .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal { width: 100%!important; }
+            .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal { width: 100%!important; }
         }
     </style>
 </head>
@@ -48,60 +695,232 @@
                 class="mx-auto mb-8 h-16 sm:h-20 max-w-full rounded-lg shadow-md"
             >
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-                About AURORA9
+                The Future of E-Commerce Doesn’t Need Micromanagement
             </h1>
-            <nav class="mt-8">
-                <a href="index.html" class="header-nav-link">Home</a>
-                <a href="about.html" class="header-nav-link">About Us</a>
-                <a href="investors.html" class="header-nav-link">For Investors</a>
-            </nav>
+            <p class="text-lg sm:text-xl mb-8 max-w-3xl mx-auto">
+                Struggling to scale your marketplace presence across Amazon, Shopify, and Walmart? Tired of burning resources on tasks that should be automated?
+            </p>
+            <p class="text-2xl sm:text-3xl font-bold mb-10">
+                Meet AURORA9 – Your Autonomous AI Workforce for Effortless Growth.
+            </p>
+            <p class="text-xl sm:text-2xl font-medium mb-12">
+                Scale smarter, faster, and with total confidence — without lifting a finger.
+            </p>
+            <div class="flex justify-center">
+                <a href="#waiting-list" class="cta-button primary-cta">Join the Waiting List</a>
+            </div>
         </div>
     </header>
 
     <section class="section-padding bg-white">
-        <div class="max-w-4xl mx-auto text-lg leading-relaxed">
-            <p class="mb-6">
-                At <strong class="font-semibold">AURORA9</strong>, we’re building the future of e-commerce with a bold vision: to create a fully autonomous AI workforce that drives growth—without the need for human micromanagement. Our platform empowers businesses to scale faster, smarter, and with full confidence by deploying intelligent AI agents that act as high-performing digital team members.
-            </p>
-            <h3 class="text-2xl font-bold text-indigo-800 mb-4">Modular AI-Agents for Core E-commerce Functions</h3>
-            <p class="mb-6">
-                Our service is modular by design, powered by specialized <strong class="font-semibold">AI-Agents</strong>, each trained and responsible for managing key e-commerce functions across marketplace platforms. These include:
-            </p>
-            <ul class="list-disc list-inside space-y-2 mb-6 ml-4">
-                <li>Marketing & Advertising</li>
-                <li>Inventory Management</li>
-                <li>UX/UI Optimization</li>
-                <li>Keyword & SEO Strategy</li>
-                <li>Data Analytics & Business Intelligence</li>
-                <li>...and more</li>
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-indigo-800">What You Gain with AURORA9:</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card flex items-start">
+                    <svg class="icon-check text-green-500 mt-1" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    <p class="text-lg font-medium">Operate 24/7 with zero burnout</p>
+                </div>
+                <div class="card flex items-start">
+                    <svg class="icon-check text-green-500 mt-1" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    <p class="text-lg font-medium">Slash operational costs and overhead</p>
+                </div>
+                <div class="card flex items-start">
+                    <svg class="icon-check text-green-500 mt-1" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    <p class="text-lg font-medium">Scale across marketplaces without hiring</p>
+                </div>
+                <div class="card flex items-start">
+                    <svg class="icon-check text-green-500 mt-1" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    <p class="text-lg font-medium">Optimize every channel in real time</p>
+                </div>
+                <div class="card flex items-start">
+                    <svg class="icon-check text-green-500 mt-1" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    <p class="text-lg font-medium">Leverage predictive analytics to drive growth</p>
+                </div>
+                <div class="card flex items-start">
+                    <svg class="icon-check text-green-500 mt-1" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    <p class="text-lg font-medium">Improve conversion rates through dynamic testing</p>
+                </div>
+                <div class="card flex items-start">
+                    <svg class="icon-check text-green-500 mt-1" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    <p class="text-lg font-medium">Increase ROI on your ad spend</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#waiting-list" class="cta-button primary-cta">Join the Waiting List</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-indigo-800">Key Values & Features</h2>
+
+            <div class="mb-16">
+                <h3 class="text-2xl sm:text-3xl font-bold mb-6 text-indigo-700">AI-POWERED AUTONOMOUS AGENTS</h3>
+                <p class="text-lg mb-8">Each agent is purpose-built to manage a critical e-commerce function:</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="card">
+                        <h4 class="text-xl font-semibold mb-2 text-indigo-600">Marketing & Advertising</h4>
+                        <p>Real-time ad budget allocation and campaign A/B testing</p>
+                    </div>
+                    <div class="card">
+                        <h4 class="text-xl font-semibold mb-2 text-indigo-600">SEO & Keywords</h4>
+                        <p>Continuous metadata and listing optimization</p>
+                    </div>
+                    <div class="card">
+                        <h4 class="text-xl font-semibold mb-2 text-indigo-600">UX/UI Optimization</h4>
+                        <p>Heatmap insights + dynamic page layout changes</p>
+                    </div>
+                    <div class="card">
+                        <h4 class="text-xl font-semibold mb-2 text-indigo-600">Inventory Management</h4>
+                        <p>Predictive restocking, multi-channel syncing</p>
+                    </div>
+                    <div class="card">
+                        <h4 class="text-xl font-semibold mb-2 text-indigo-600">Data Intelligence</h4>
+                        <p>Unified dashboards, actionable insights</p>
+                    </div>
+                </div>
+
+                <div class="mt-12 p-8 bg-white rounded-xl shadow-lg border border-indigo-200">
+                    <h3 class="text-2xl font-bold text-indigo-800 mb-6 text-center">
+                        ✨ Generate Product Descriptions with AI ✨
+                    </h3>
+                    <p class="text-md text-gray-700 mb-6 text-center">
+                        See how AURORA9's AI can craft compelling product descriptions instantly.
+                        Just provide a few keywords!
+                    </p>
+                    <div class="flex flex-col gap-4">
+                        <textarea
+                            id="productKeywords"
+                            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-800"
+                            rows="4"
+                            placeholder="e.g., 'Eco-friendly water bottle, stainless steel, keeps drinks cold 24h, sleek design'"
+                        ></textarea>
+                        <button
+                            id="generateDescriptionButton"
+                            class="cta-button primary-cta self-center"
+                        >
+                            Generate Description
+                        </button>
+                    </div>
+                    <div id="descriptionOutput" class="mt-8 p-6 bg-indigo-50 rounded-lg border border-indigo-300 text-indigo-900 hidden">
+                        <p class="font-semibold mb-2">Generated Product Description:</p>
+                        <div id="generatedText" class="text-gray-800"></div>
+                        <div id="loadingIndicator" class="text-center mt-4 hidden">
+                            <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-500 mx-auto"></div>
+                            <p class="text-indigo-600 mt-2">Generating...</p>
+                        </div>
+                    </div>
+                    <div id="errorMessage" class="mt-4 text-red-600 text-center hidden"></div>
+                </div>
+                </div>
+
+            <div class="mb-16">
+                <h3 class="text-2xl sm:text-3xl font-bold mb-6 text-indigo-700">SEAMLESS MARKETPLACE INTEGRATION</h3>
+                <p class="text-lg mb-8">Plug-and-play compatibility with:</p>
+                <ul class="list-disc list-inside text-lg space-y-2 ml-4">
+                    <li>Amazon Seller Central</li>
+                    <li>Shopify</li>
+                    <li>Walmart Marketplace</li>
+                    <li>Wayfair, eBay, and more</li>
+                </ul>
+                <p class="text-lg mt-4">Secure APIs ensure real-time learning from every action taken.</p>
+            </div>
+
+            <div class="mb-16">
+                <h3 class="text-2xl sm:text-3xl font-bold mb-6 text-indigo-700">AUTONOMY MODES</h3>
+                <p class="text-lg mb-8">AURORA9 offers flexible control, allowing you to choose the level of AI autonomy that suits your needs:</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="card">
+                        <h4 class="text-xl font-semibold mb-2 text-indigo-600">Progressively Autonomous Mode</h4>
+                        <p class="text-base">AI provides recommendations and executes tasks only after your explicit approval, gradually learning your preferences.</p>
+                    </div>
+                    <div class="card">
+                        <h4 class="text-xl font-semibold mb-2 text-indigo-600">Semi-autonomous Mode</h4>
+                        <p class="text-base">AI assists with intelligent suggestions and automated execution, keeping you in control with oversight.</p>
+                    </div>
+                    <div class="card">
+                        <h4 class="text-xl font-semibold mb-2 text-indigo-600">Fully Autonomous Mode</h4>
+                        <p class="text-base">AI agents independently manage and optimize operations based on predefined goals, requiring minimal human intervention.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-2xl sm:text-3xl font-bold mb-6 text-indigo-700">POWERED BY IBM WATSONX CLOUD</h3>
+                <p class="text-lg">Reliability, security, and enterprise-grade scalability.</p>
+                <p class="text-lg mt-2">Built with trust, compliance, and transparent AI governance at its core.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-gradient-to-r from-indigo-600 to-purple-700 text-white rounded-t-3xl">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-8">
+                The E-Commerce Battlefield is Evolving — Early Adopters Win.
+            </h2>
+            <ul class="list-disc list-inside text-xl space-y-3 mb-10 max-w-2xl mx-auto text-left">
+                <li>Gain first-mover advantage</li>
+                <li>Unlock early access to advanced features</li>
+                <li>Be among the first to experience autonomous e-commerce</li>
+                <li>Reserved onboarding slots for Q3 are filling fast</li>
             </ul>
+            <a href="#waiting-list" class="cta-button primary-cta !bg-white !text-indigo-600 hover:!bg-indigo-50 hover:!text-indigo-700">Join the Waiting List</a>
+        </div>
+    </section>
 
-            <h3 class="text-2xl font-bold text-indigo-800 mb-4">How It Works: Seamless Integration & Autonomous Operation</h3>
-            <p class="mb-6">
-                Our technology integrates directly with marketplace backends such as <strong class="font-semibold">Amazon Seller Central</strong>, <strong class="font-semibold">Shopify</strong>, <strong class="font-semibold">Walmart</strong>, and others. Each AI-Agent securely extracts and learns from historical and real-time data aligned to its area of responsibility. For example, the <strong class="font-semibold">Marketing AI-Agent</strong> gathers all relevant advertising and sales performance data to autonomously implement and scale growth strategies.
-            </p>
-            <p class="mb-6">
-                <strong class="font-semibold">AURORA9</strong> offers two modes of operation to meet different business needs:
-            </p>
-            <ul class="list-disc list-inside space-y-2 mb-6 ml-4">
-                <li><strong class="font-semibold">Autonomous Mode</strong> – AI agents independently strategize and execute without requiring human approval.</li>
-                <li><strong class="font-semibold">Progressive Mode</strong> – AI agents suggest data-backed decisions and wait for user approval before executing actions.</li>
-            </ul>
-
-            <h3 class="text-2xl font-bold text-indigo-800 mb-4">Powered by IBM Watsonx Cloud: Trust, Compliance, and Scalability</h3>
-            <p class="mb-6">
-                Our platform is powered by the robust and secure <strong class="font-semibold">IBM Watsonx Cloud</strong>, ensuring enterprise-grade performance, AI governance, and scalability. With this foundation, <strong class="font-semibold">AURORA9</strong> delivers a governance-first, action-oriented, and explainable AI system designed to meet the trust and compliance requirements of today’s e-commerce leaders.
+    <section id="waiting-list" class="section-padding bg-gray-100">
+        <div class="max-w-xl mx-auto text-center card p-8">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-indigo-800">
+                Ready to Run Leaner, Faster, and Smarter?
+            </h2>
+            <p class="text-lg sm:text-xl mb-8">
+                Don’t get buried in manual tasks. Join our waiting list to be notified when AURORA9 goes live and start your autonomous e-commerce journey today.
             </p>
 
-            <p class="text-xl font-bold text-center mt-10">
-                This is more than automation.
-            </p>
-            <p class="text-xl font-bold text-center mb-6">
-                This is your 24/7 digital workforce—trained, integrated, and ready to scale.
-            </p>
-            <p class="text-3xl font-extrabold text-center text-indigo-700">
-                This is <strong class="font-extrabold">AURORA9</strong>.
-            </p>
+            <div id="mlb2-26652325" class="ml-form-embedContainer ml-form-align-center">
+                <div class="ml-form-embedWrapper embedForm">
+                    <div class="ml-form-embedBody ml-form-embedBodyHorizontal">
+                        <div class="ml-form-embedContent">
+                            </div>
+                        <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/363842/forms/26652325/subscribe" data-v-230a473a="" method="post" target="_blank">
+                            <div class="ml-form-formContent horozintalForm">
+                                <div class="ml-form-horizontalRow">
+                                    <div class="ml-input-horizontal">
+                                        <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                                            <input type="email" class="form-control" data-inputmask="" id="mailerlite-email" name="fields[email]" placeholder="Enter your email address" autocomplete="email" required>
+                                        </div>
+                                    </div>
+                                    <div class="ml-button-horizontal">
+                                        <button type="submit" class="primary-cta cta-button">Join Waiting List</button>
+                                        <button disabled="disabled" style="display: none;" type="button" class="loading">
+                                            <div class="ml-form-embedSubmitLoad"></div>
+                                            <span class="sr-only">Loading...</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="ml-submit" value="1">
+                            <input type="hidden" name="anticsrf" value="true">
+                        </form>
+                    </div>
+                    <div class="ml-form-successBody" style="display: none">
+                        <div class="ml-form-successContent">
+                            <h4>Thank you!</h4>
+                            <p>Your submission has been received.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function ml_webform_success_26652325() {
+                    var r = ml_jQuery || jQuery;
+                    r(".ml-block-form").hide(), r(".ml-form-successBody").show()
+                }
+            </script>
+            <img src="https://assets.mlcdn.com/images/default/mlsubscribe.png" alt="MailerLite" width="1" height="1" style="max-width:1px; max-height:1px; visibility:hidden; position:absolute; pointer-events:none;">
+            <script src="https://assets.mlcdn.com/scripts/v1/loader.js?groupId=26652325" async="true"></script>
+            <p class="text-sm text-gray-500 mt-4">We respect your privacy. No spam, ever.</p>
         </div>
     </section>
 
@@ -109,26 +928,192 @@
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-sm space-y-4 sm:space-y-0">
             <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6">
                 <span>AURORA9 Inc.</span>
-                <a href="#" class="hover:text-white transition-colors duration-200">Contact Us</a>
-                <a href="#" class="hover:text-white transition-colors duration-200">Terms of Use</a>
-                <a href="#" class="hover:text-white transition-colors duration-200">Privacy Policy</a>
+                <a href="#contact-us" class="hover:text-white transition-colors duration-200">Contact Us</a>
+                <a href="#terms-of-use" class="hover:text-white transition-colors duration-200">Terms of Use</a>
+                <a href="#privacy-policy" class="hover:text-white transition-colors duration-200">Privacy Policy</a>
             </div>
             <div class="flex space-x-4">
-                <a href="#" class="hover:text-white transition-colors duration-200">
+                <a href="https://www.linkedin.com/company/aurora9/" target="_blank" class="hover:text-white transition-colors duration-200">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                     <span class="sr-only">LinkedIn</span>
                 </a>
-                <a href="#" class="hover:text-white transition-colors duration-200">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.791-1.574 2.164-2.722-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.594 0 .507.056.991.164 1.46-5.418-.273-10.213-2.86-13.407-6.795-.555.959-.877 2.07-.877 3.253 0 2.247 1.139 4.226 2.873 5.394-.422-.016-.832-.137-1.189-.327v.08c0 3.154 2.239 5.792 5.196 6.39-.544.148-1.114.237-1.703.237-.417 0-.823-.041-1.22-.116.823 2.572 3.22 4.45 6.04 4.49-.221.174-.449.347-.68.508-2.083 1.597-4.736 2.548-7.594 2.548-.507 0-.999-.03-1.48-.087.646 2.046 2.492 3.5 4.686 3.753z"/></svg>
-                    <span class="sr-only">Twitter</span>
-                </a>
-                <a href="#" class="hover:text-white transition-colors duration-200">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.099-.492-1.099-1.099s.492-1.099 1.099-1.099 1.099.492 1.099 1.099-.492 1.099-1.099 1.099zm8 6.891h-2v-3.472c0-2.184-2-2.022-2 0v3.472h-2v-6h2v1.093c.726-1.357 3-1.486 3-4.403v3.31h2v6z"/></svg>
-                    <span class="sr-only">Facebook</span>
-                </a>
+                <a href="#about-us" class="footer-link">About Us</a>
+                <a href="#investors-inquiry" class="footer-link">Investors Inquiry</a>
             </div>
         </div>
     </footer>
 
+    <section id="about-us" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto card">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-indigo-800">About Us: AURORA9</h2>
+            <p class="text-lg">
+                At AURORA9, we’re building the future of ecommerce with a bold vision: to create a fully autonomous AI
+                workforce that drives growth—without the need for human micromanagement. Our platform empowers businesses to
+                scale faster, smarter, and with full confidence by deploying intelligent AI agents that act as high-performing
+                digital team members.
+            </p>
+            <p class="text-lg mt-4">
+                Our service is modular by design, powered by specialized AI-Agents, each trained and responsible for managing key
+                ecommerce functions across marketplace platforms. These include:
+            </p>
+            <ul class="list-disc list-inside text-lg space-y-2 ml-4">
+                <li>Marketing & Advertising</li>
+                <li>Inventory Management</li>
+                <li>UX/UI Optimization</li>
+                <li>Keyword & SEO Strategy</li>
+                <li>Data Analytics & Business Intelligence</li>
+                <li>...and more</li>
+            </ul>
+            <p class="text-lg mt-4">
+                <b>How It Works</b>
+            </p>
+            <p class="text-lg mt-2">
+                Our technology integrates directly with marketplace backends such as Amazon Seller Central, Shopify, Walmart, and
+                others. Each AI-Agent securely extracts and learns from historical and real-time data aligned to its area of
+                responsibility. For example, the Marketing AI-Agent gathers all relevant advertising and sales performance data
+                to autonomously implement and scale growth strategies.
+            </p>
+            <p class="text-lg mt-4">
+                Aurora9 offers two modes of operation to meet different business needs:
+            </p>
+            <ul class="list-disc list-inside text-lg space-y-2 ml-4">
+                <li><b>Autonomous Mode</b> – AI agents independently strategize and execute without requiring human approval.</li>
+                <li><b>Progressive Mode</b> – AI agents suggest data-backed decisions and wait for user approval before executing
+                    actions.</li>
+            </ul>
+            <p class="text-lg mt-4">
+                Our platform is powered by the robust and secure IBM Watsonx Cloud, ensuring enterprise-grade performance, AI
+                governance, and scalability. With this foundation, Aurora9 delivers a governance-first, action-oriented, and
+                explainable AI system designed to meet the trust and compliance requirements of today’s ecommerce leaders.
+            </p>
+            <p class="text-xl font-bold mt-8">
+                This is more than automation.
+            </p>
+            <p class="text-xl font-bold">
+                This is your 24/7 digital workforce—trained, integrated, and ready to scale.
+            </p>
+            <p class="text-xl font-bold">
+                This is AURORA9.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact-us" class="section-padding bg-gray-100">
+        <div class="max-w-7xl mx-auto card">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-indigo-800">Contact Us</h2>
+            <p class="text-lg text-center">For inquiries, please reach out to us at <a href="mailto:info@aurora9.com" class="text-indigo-600 hover:underline">info@aurora9.com</a>.</p>
+            </div>
+    </section>
+
+    <section id="investors-inquiry" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto card">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-indigo-800">Investors Inquiry: Emphasizing Solution & Core Benefits for Investors</h2>
+            <p class="text-lg">
+                AURORA9 is revolutionizing e-commerce by providing businesses with an autonomous AI workforce that eliminates the
+                need for constant human oversight, freeing them to scale faster and smarter. Our intelligent AI agents are
+                specifically designed to manage core e-commerce functions—from Marketing & Advertising to Inventory Management
+                and Business Intelligence—by securely integrating with platforms like Shopify and Amazon Seller Central and
+                learning from real-time data.
+            </p>
+            <p class="text-lg mt-4">
+                Leveraging the secure and scalable IBM Watsonx Cloud, AURORA9 offers a governance-first, explainable AI system that
+                meets today's stringent trust and compliance requirements. For investors looking to back a transformative
+                technology poised for significant market impact in the e-commerce sector, AURORA9 represents a compelling
+                opportunity to be part of the 24/7 digital workforce of tomorrow.
+            </p>
+        </div>
+    </section>
+
+    <section id="terms-of-use" class="section-padding bg-gray-100">
+        <div class="max-w-7xl mx-auto card">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-indigo-800">Terms of Use</h2>
+            <p class="text-lg">
+                This section outlines the terms and conditions governing your use of the AURORA9 platform and services. By accessing or using our platform, you agree to be bound by these terms. We reserve the right to update and modify these terms at any time. Your continued use of the platform constitutes your acceptance of the updated terms.
+            </p>
+            <p class="text-lg mt-4">
+                Please read these terms carefully before using our services.
+            </p>
+            </div>
+    </section>
+
+    <section id="privacy-policy" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto card">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-indigo-800">Privacy Policy</h2>
+            <p class="text-lg">
+                Your privacy is paramount to AURORA9. This policy explains how we collect, use, disclose, and safeguard your information when you use our platform. We are committed to protecting your personal data and ensuring compliance with relevant data protection regulations.
+            </p>
+            <p class="text-lg mt-4">
+                We collect information necessary to provide and improve our services, including but not limited to, email addresses for communication and operational data from integrated marketplaces to power our AI agents. We do not sell or share your personal information with third parties for their marketing purposes without your explicit consent.
+            </p>
+            </div>
+    </section>
+
+    <script>
+        function ml_webform_success_26652325() {
+            var r = ml_jQuery || jQuery;
+            r(".ml-block-form").hide(), r(".ml-form-successBody").show()
+        }
+    </script>
+    <img src="https://assets.mailerlite.com/images/default/mlsubscribe.png" alt="MailerLite" width="1" height="1" style="max-width:1px; max-height:1px; visibility:hidden; position:absolute; pointer-events:none;">
+    <script src="https://assets.mlcdn.com/scripts/v1/loader.js?groupId=26652325" async="true"></script>
+    <script>
+        // AI Product Description Generator Logic
+        document.getElementById('generateDescriptionButton').addEventListener('click', async () => {
+            const keywords = document.getElementById('productKeywords').value;
+            const outputDiv = document.getElementById('descriptionOutput');
+            const generatedTextDiv = document.getElementById('generatedText');
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            const errorMessageDiv = document.getElementById('errorMessage');
+
+            // Clear previous output and error
+            generatedTextDiv.innerHTML = '';
+            errorMessageDiv.textContent = '';
+            outputDiv.classList.add('hidden');
+            errorMessageDiv.classList.add('hidden');
+            loadingIndicator.classList.remove('hidden');
+
+            if (!keywords.trim()) {
+                errorMessageDiv.textContent = 'Please enter some keywords to generate a description.';
+                errorMessageDiv.classList.remove('hidden');
+                loadingIndicator.classList.add('hidden');
+                return;
+            }
+
+            try {
+                let chatHistory = [];
+                chatHistory.push({ role: "user", parts: [{ text: `Generate a compelling product description based on these keywords: ${keywords}` }] });
+
+                const payload = { contents: chatHistory };
+                const apiKey = ""; // Leave as-is for Canvas to provide
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    generatedTextDiv.innerHTML = text;
+                    outputDiv.classList.remove('hidden');
+                } else {
+                    errorMessageDiv.textContent = 'Failed to generate description. Please try again.';
+                    errorMessageDiv.classList.remove('hidden');
+                    console.error('API response structure unexpected:', result);
+                }
+            } catch (error) {
+                errorMessageDiv.textContent = 'An error occurred while generating the description. Please try again later.';
+                errorMessageDiv.classList.remove('hidden');
+                console.error('Error calling Gemini API:', error);
+            } finally {
+                loadingIndicator.classList.add('hidden');
+            }
+        });
+    </script>
 </body>
 </html>
