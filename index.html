@@ -928,17 +928,16 @@
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-sm space-y-4 sm:space-y-0">
             <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6">
                 <span>AURORA9 Inc.</span>
+                <a href="#about-us" class="hover:text-white transition-colors duration-200">About Us</a>
                 <a href="#contact-us" class="hover:text-white transition-colors duration-200">Contact Us</a>
+                <a href="#investors-inquiry" class="hover:text-white transition-colors duration-200">Investors Inquiry</a>
                 <a href="#terms-of-use" class="hover:text-white transition-colors duration-200">Terms of Use</a>
                 <a href="#privacy-policy" class="hover:text-white transition-colors duration-200">Privacy Policy</a>
             </div>
             <div class="flex space-x-4">
-                <a href="https://www.linkedin.com/company/aurora9/" target="_blank" class="hover:text-white transition-colors duration-200">
+                <a href="https://www.linkedin.com/company/aurora9/" target="_blank" class="hover:text-white transition-colors duration-200" aria-label="LinkedIn">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                    <span class="sr-only">LinkedIn</span>
                 </a>
-                <a href="#about-us" class="footer-link">About Us</a>
-                <a href="#investors-inquiry" class="footer-link">Investors Inquiry</a>
             </div>
         </div>
     </footer>
@@ -1001,7 +1000,7 @@
     <section id="contact-us" class="section-padding bg-gray-100">
         <div class="max-w-7xl mx-auto card">
             <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-indigo-800">Contact Us</h2>
-            <p class="text-lg text-center">For inquiries, please reach out to us at <a href="mailto:info@aurora9.com" class="text-indigo-600 hover:underline">info@aurora9.com</a>.</p>
+            <p class="text-lg text-center">For inquiries, please reach out to us at <a href="mailto:aurora9ai@gmail.com" class="text-indigo-600 hover:underline">aurora9ai@gmail.com</a>.</p>
             </div>
     </section>
 
@@ -1054,7 +1053,7 @@
             r(".ml-block-form").hide(), r(".ml-form-successBody").show()
         }
     </script>
-    <img src="https://assets.mailerlite.com/images/default/mlsubscribe.png" alt="MailerLite" width="1" height="1" style="max-width:1px; max-height:1px; visibility:hidden; position:absolute; pointer-events:none;">
+    <img src="https://assets.mlcdn.com/images/default/mlsubscribe.png" alt="MailerLite" width="1" height="1" style="max-width:1px; max-height:1px; visibility:hidden; position:absolute; pointer-events:none;">
     <script src="https://assets.mlcdn.com/scripts/v1/loader.js?groupId=26652325" async="true"></script>
     <script>
         // AI Product Description Generator Logic
@@ -1070,12 +1069,12 @@
             errorMessageDiv.textContent = '';
             outputDiv.classList.add('hidden');
             errorMessageDiv.classList.add('hidden');
-            loadingIndicator.classList.remove('hidden');
+            loadingIndicator.classList.remove('hidden'); // Show loading indicator
 
             if (!keywords.trim()) {
                 errorMessageDiv.textContent = 'Please enter some keywords to generate a description.';
                 errorMessageDiv.classList.remove('hidden');
-                loadingIndicator.classList.add('hidden');
+                loadingIndicator.classList.add('hidden'); // Hide loading indicator if no keywords
                 return;
             }
 
@@ -1093,6 +1092,16 @@
                     body: JSON.stringify(payload)
                 });
 
+                if (!response.ok) {
+                    // Handle HTTP errors (e.g., 400, 403, 500)
+                    const errorData = await response.json(); // Attempt to parse error message from response body
+                    const errorMessage = errorData.error?.message || `API request failed with status: ${response.status} ${response.statusText}`;
+                    errorMessageDiv.textContent = `Error: ${errorMessage}`;
+                    errorMessageDiv.classList.remove('hidden');
+                    console.error('API HTTP Error:', response.status, response.statusText, errorData);
+                    return; // Stop execution here
+                }
+
                 const result = await response.json();
 
                 if (result.candidates && result.candidates.length > 0 &&
@@ -1102,16 +1111,17 @@
                     generatedTextDiv.innerHTML = text;
                     outputDiv.classList.remove('hidden');
                 } else {
-                    errorMessageDiv.textContent = 'Failed to generate description. Please try again.';
+                    errorMessageDiv.textContent = 'Failed to generate description due to unexpected AI response. Please try again.';
                     errorMessageDiv.classList.remove('hidden');
-                    console.error('API response structure unexpected:', result);
+                    console.error('AI response structure unexpected or missing content:', result);
                 }
             } catch (error) {
-                errorMessageDiv.textContent = 'An error occurred while generating the description. Please try again later.';
+                // This catch block handles network errors or issues with parsing JSON
+                errorMessageDiv.textContent = 'An error occurred while communicating with the AI. Please check your internet connection or try again later.';
                 errorMessageDiv.classList.remove('hidden');
-                console.error('Error calling Gemini API:', error);
+                console.error('Network or Parsing Error:', error);
             } finally {
-                loadingIndicator.classList.add('hidden');
+                loadingIndicator.classList.add('hidden'); // Always hide loading indicator when done
             }
         });
     </script>
