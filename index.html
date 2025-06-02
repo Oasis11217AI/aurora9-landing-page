@@ -33,656 +33,730 @@
             fill: currentColor;
         }
 
-        /* MailerLite specific styles - integrated for aesthetic consistency */
-        /* These styles override some MailerLite defaults to better match the existing design */
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper {
-            background-color: transparent !important; /* Make background transparent to use parent card style */
-            border-width: 0px !important; /* Remove MailerLite default border */
-            box-shadow: none !important; /* Remove MailerLite default shadow */
-            padding: 0 !important;
-            max-width: 100% !important; /* Ensure it's fully responsive */
-            width: 100% !important; /* Ensure it's fully responsive */
-        }
-
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper.embedPopup,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper.embedDefault {
-            width: 100% !important; /* Ensure full width on all embed types */
-        }
-
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody {
-            padding: 0 !important; /* Remove default padding to let parent handle it */
-        }
-
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input {
-            background-color: #ffffff !important;
-            color: #333333 !important;
-            border-color: #cccccc !important;
-            border-radius: 9999px !important; /* Rounded-full equivalent */
-            border-width: 1px !important;
-            padding: 12px 20px !important; /* Adjusted padding for better look */
-            font-size: 16px !important; /* Slightly larger font */
-            line-height: 1.5 !important;
-            box-shadow: none !important; /* Remove any default box-shadow */
-            transition: all 0.2s ease-in-out; /* Add transition for focus effect */
-        }
-
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input:focus,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:focus {
-            outline: none !important;
-            border-color: #6366f1 !important; /* Indigo-500 on focus */
-            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.4) !important; /* Ring effect */
-        }
-
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
-            background-color: #6366f1 !important; /* Indigo-600 */
-            border-color: #6366f1 !important;
-            border-radius: 9999px !important; /* Rounded-full equivalent */
-            color: #ffffff !important;
-            font-weight: 600 !important; /* Semibold */
-            padding: 16px 32px !important; /* Larger padding for button */
-            font-size: 16px !important;
-            transition: all 0.3s ease-in-out !important;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* Shadow-lg equivalent */
-        }
-
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover {
-            background-color: #4f46e5 !important; /* Indigo-700 */
-            border-color: #4f46e5 !important;
-        }
-
-        /* Adjust MailerLite's default text styles to match Inter font and existing colors */
-        #mlb2-26652325.ml-form-embedContainer h4,
-        #mlb2-26652325.ml-form-embedContainer p,
-        #mlb2-26652325.ml-form-embedContainer span,
-        #mlb2-26652325.ml-form-embedContainer label {
-            font-family: 'Inter', sans-serif !important;
-            color: #1e293b !important; /* Dark slate text */
-        }
-
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p {
-            font-size: 18px !important; /* Larger paragraph text */
-            line-height: 1.75 !important;
-            text-align: center !important; /* Center align text in the form */
-        }
-
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow label {
-            font-size: 14px !important;
-            font-weight: 500 !important; /* Medium weight */
-            text-align: center !important; /* Center align labels */
-            width: 100%; /* Ensure label takes full width */
-            display: block; /* Ensure label is block level */
-        }
-
-        /* Loader and reCAPTCHA adjustments */
-        .ml-form-embedSubmitLoad:after {
-            border-color: #6366f1 #6366f1 #6366f1 transparent !important; /* Match primary color */
-        }
-
-        .g-recaptcha {
-            margin: 20px auto; /* Center reCAPTCHA */
-            display: block;
-        }
-
-        /* Responsive adjustments for MailerLite form */
-        @media only screen and (max-width: 640px) { /* Equivalent to sm breakpoint */
-            #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper.embedDefault,
-            #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper.embedPopup,
-            #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper.embedForm {
-                width: 100% !important;
-                max-width: 100% !important;
-            }
-            .ml-form-formContent.horozintalForm .ml-form-horizontalRow {
-                flex-direction: column; /* Stack input and button on small screens */
-                align-items: center;
-            }
-            .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal,
-            .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal {
-                width: 100% !important; /* Full width for stacked elements */
-                margin-bottom: 10px; /* Add space between stacked elements */
-            }
-            .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal.labelsOn {
-                padding-top: 0; /* Remove extra padding if labels are stacked */
-            }
-        }
-
-        /* Additional MailerLite CSS provided by user */
-        @import url("https://assets.mlcdn.com/fonts.css?version=1748530");
+        /* Reverted MailerLite specific styles to original */
+        @import url("https://assets.mlcdn.com/fonts.css?version=1748530"); /* cite: 1 */
         /* LOADER */
         .ml-form-embedSubmitLoad {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
+          display: inline-block; /* cite: 2 */
+          width: 20px; /* cite: 2 */
+          height: 20px; /* cite: 2 */
         }
 
         .g-recaptcha {
-            transform: scale(1);
-            -webkit-transform: scale(1);
-            transform-origin: 0 0;
-            -webkit-transform-origin: 0 0;
-            height: ;
+        transform: scale(1); /* cite: 3 */
+        -webkit-transform: scale(1); /* cite: 3 */
+        transform-origin: 0 0; /* cite: 3 */
+        -webkit-transform-origin: 0 0; /* cite: 3 */
+        height: ; /* cite: 3 */
         }
 
         .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0,0,0,0);
-            border: 0;
+          position: absolute; /* cite: 4 */
+          width: 1px; /* cite: 4 */
+          height: 1px; /* cite: 4 */
+          padding: 0; /* cite: 4 */
+          margin: -1px; /* cite: 4 */
+          overflow: hidden; /* cite: 4 */
+          clip: rect(0,0,0,0); /* cite: 4 */
+          border: 0; /* cite: 5 */
         }
 
         .ml-form-embedSubmitLoad:after {
-            content: " ";
-            display: block;
-            width: 11px;
-            height: 11px;
-            margin: 1px;
-            border-radius: 50%;
-            border: 4px solid #fff;
-            border-color: #ffffff #ffffff #ffffff transparent;
-            animation: ml-form-embedSubmitLoad 1.2s linear infinite;
+          content: " "; /* cite: 6 */
+          display: block; /* cite: 6 */
+          width: 11px; /* cite: 6 */
+          height: 11px; /* cite: 6 */
+          margin: 1px; /* cite: 6 */
+          border-radius: 50%; /* cite: 6 */
+          border: 4px solid #fff; /* cite: 6 */
+        border-color: #ffffff #ffffff #ffffff transparent; /* cite: 6 */
+        animation: ml-form-embedSubmitLoad 1.2s linear infinite; /* cite: 7 */
         }
         @keyframes ml-form-embedSubmitLoad {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
+          0% {
+          transform: rotate(0deg); /* cite: 8 */
         }
-        #mlb2-26652325.ml-form-embedContainer {
-            box-sizing: border-box;
-            display: table;
-            margin: 0 auto;
-            position: static;
-            width: 100% !important;
+          100% {
+          transform: rotate(360deg); /* cite: 9 */
         }
-        #mlb2-26652325.ml-form-embedContainer h4,
-        #mlb2-26652325.ml-form-embedContainer p,
-        #mlb2-26652325.ml-form-embedContainer span,
-        #mlb2-26652325.ml-form-embedContainer button {
-            text-transform: none !important;
-            letter-spacing: normal !important;
         }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper {
-            background-color: #f6f6f6;
-
-            border-width: 0px;
-            border-color: transparent;
-            border-radius: 4px;
-            border-style: solid;
-            box-sizing: border-box;
-            display: inline-block !important;
-            margin: 0;
-            padding: 0;
-            position: relative;
+          #mlb2-26652325.ml-form-embedContainer {
+            box-sizing: border-box; /* cite: 10 */
+            display: table; /* cite: 10 */
+            margin: 0 auto; /* cite: 10 */
+            position: static; /* cite: 10 */
+            width: 100% !important; /* cite: 11 */
         }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper.embedPopup,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper.embedDefault { width: 400px; }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper.embedForm { max-width: 400px; width: 100%; }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-align-left { text-align: left; }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-align-center { text-align: center; }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-align-default { display: table-cell !important; vertical-align: middle !important; text-align: center !important; }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-align-right { text-align: right; }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedHeader img {
-            border-top-left-radius: 4px;
-            border-top-right-radius: 4px;
-            height: auto;
-            margin: 0 auto !important;
-            max-width: 100%;
-            width: undefinedpx;
+          #mlb2-26652325.ml-form-embedContainer h4,
+          #mlb2-26652325.ml-form-embedContainer p,
+          #mlb2-26652325.ml-form-embedContainer span,
+          #mlb2-26652325.ml-form-embedContainer button {
+            text-transform: none !important; /* cite: 12 */
+            letter-spacing: normal !important; /* cite: 12 */
         }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
-            padding: 20px 20px 0 20px;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper {
+            background-color: #f6f6f6; /* cite: 13 */
+            border-width: 0px; /* cite: 13 */
+            border-color: transparent; /* cite: 13 */
+            border-radius: 4px; /* cite: 13 */
+            border-style: solid; /* cite: 13 */
+            box-sizing: border-box; /* cite: 13 */
+            display: inline-block !important; /* cite: 14 */
+            margin: 0; /* cite: 14 */
+            padding: 0; /* cite: 14 */
+            position: relative; /* cite: 14 */
         }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody.ml-form-embedBodyHorizontal {
-            padding-bottom: 0;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper.embedPopup,
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper.embedDefault { width: 400px; /* cite: 15 */
         }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent {
-            text-align: left;
-            margin: 0 0 20px 0;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper.embedForm { max-width: 400px; width: 100%; /* cite: 16 */
         }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent h4,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4 {
-            color: #000000;
-            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-            font-size: 30px;
-            font-weight: 400;
-            margin: 0 0 10px 0;
-            text-align: left;
-            word-break: break-word;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-align-left { text-align: left; /* cite: 17 */
         }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p {
-            color: #000000;
-            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 20px;
-            margin: 0 0 10px 0;
-            text-align: left;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-align-center { text-align: center; /* cite: 18 */
         }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ul,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ol,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ul,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ol {
-            color: #000000;
-            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-            font-size: 14px;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-align-default { display: table-cell !important; vertical-align: middle !important; text-align: center !important; /* cite: 19 */
         }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ol ol,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ol ol {
-            list-style-type: lower-alpha;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-align-right { text-align: right; /* cite: 20 */
         }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ol ol ol,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ol ol ol {
-            list-style-type: lower-roman;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedHeader img {
+            border-top-left-radius: 4px; /* cite: 21 */
+            border-top-right-radius: 4px; /* cite: 21 */
+            height: auto; /* cite: 21 */
+            margin: 0 auto !important; /* cite: 21 */
+            max-width: 100%; /* cite: 21 */
+            width: undefinedpx; /* cite: 22 */
         }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p a,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p a {
-            color: #000000;
-            text-decoration: underline;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody,
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+            padding: 20px 20px 0 20px; /* cite: 23 */
         }
-
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-field-group {
-            text-align: left!important;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody.ml-form-embedBodyHorizontal {
+            padding-bottom: 0; /* cite: 24 */
         }
-
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-field-group label {
-            margin-bottom: 5px;
-            color: #333333;
-            font-size: 14px;
-            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-            font-weight: bold; font-style: normal; text-decoration: none;;
-            display: inline-block;
-            line-height: 20px;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent,
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent {
+            text-align: left; /* cite: 25 */
+            margin: 0 0 20px 0; /* cite: 25 */
         }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p:last-child,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p:last-child {
-            margin: 0;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent h4,
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4 {
+            color: #000000; /* cite: 26 */
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* cite: 26 */
+            font-size: 30px; /* cite: 26 */
+            font-weight: 400; /* cite: 26 */
+            margin: 0 0 10px 0; /* cite: 26 */
+            text-align: left; /* cite: 27 */
+            word-break: break-word; /* cite: 27 */
         }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody form {
-            margin: 0;
-            width: 100%;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p,
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p {
+            color: #000000; /* cite: 28 */
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* cite: 28 */
+            font-size: 14px; /* cite: 28 */
+            font-weight: 400; /* cite: 28 */
+            line-height: 20px; /* cite: 28 */
+            margin: 0 0 10px 0; /* cite: 29 */
+            text-align: left; /* cite: 29 */
         }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow {
-            margin: 0 0 20px 0;
-            width: 100%;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ul,
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ol,
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ul,
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ol {
+            color: #000000; /* cite: 30 */
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* cite: 30 */
+            font-size: 14px; /* cite: 30 */
         }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow {
-            float: left;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ol ol,
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ol ol {
+            list-style-type: lower-alpha; /* cite: 31 */
         }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent.horozintalForm {
-            margin: 0;
-            padding: 0 0 20px 0;
-            width: 100%;
-            height: auto;
-            float: left;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent ol ol ol,
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent ol ol ol {
+            list-style-type: lower-roman; /* cite: 32 */
         }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow {
-            margin: 0 0 10px 0;
-            width: 100%;
-        }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow.ml-last-item {
-            margin: 0;
-        }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow.ml-formfieldHorizintal {
-            margin: 0;
-        }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input {
-            background-color: #ffffff !important;
-            color: #333333 !important;
-            border-color: #cccccc;
-            border-radius: 4px !important;
-            border-style: solid !important;
-            border-width: 1px !important;
-            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-            font-size: 14px !important;
-            height: auto;
-            line-height: 21px !important;
-            margin-bottom: 0;
-            margin-top: 0;
-            margin-left: 0;
-            margin-right: 0;
-            padding: 10px 10px !important;
-            width: 100% !important;
-            box-sizing: border-box !important;
-            max-width: 100% !important;
-        }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input::-webkit-input-placeholder,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::-webkit-input-placeholder { color: #333333; }
-
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input::-moz-placeholder,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::-moz-placeholder { color: #333333; }
-
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input:-ms-input-placeholder,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:-ms-input-placeholder { color: #333333; }
-
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input:-moz-placeholder,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:-moz-placeholder { color: #333333; }
-
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow textarea, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow textarea {
-            background-color: #ffffff !important;
-            color: #333333 !important;
-            border-color: #cccccc;
-            border-radius: 4px !important;
-            border-style: solid !important;
-            border-width: 1px !important;
-            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-            font-size: 14px !important;
-            height: auto;
-            line-height: 21px !important;
-            margin-bottom: 0;
-            margin-top: 0;
-            padding: 10px 10px !important;
-            width: 100% !important;
-            box-sizing: border-box !important;
-            max-width: 100% !important;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p a,
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p a {
+            color: #000000; /* cite: 33 */
+            text-decoration: underline; /* cite: 33 */
         }
 
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before {
-            border-color: #cccccc!important;
-            background-color: #ffffff!important;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-field-group {
+            text-align: left!important; /* cite: 34 */
         }
 
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input.custom-control-input[type="checkbox"]{
-            box-sizing: border-box;
-            padding: 0;
-            position: absolute;
-            z-index: -1;
-            opacity: 0;
-            margin-top: 5px;
-            margin-left: -1.5rem;
-            overflow: visible;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-field-group label {
+            margin-bottom: 5px; /* cite: 35 */
+            color: #333333; /* cite: 35 */
+            font-size: 14px; /* cite: 35 */
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* cite: 35 */
+            font-weight: bold; font-style: normal; text-decoration: none;; /* cite: 36 */
+            display: inline-block; /* cite: 36 */
+            line-height: 20px; /* cite: 36 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p:last-child,
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p:last-child {
+            margin: 0; /* cite: 37 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody form {
+            margin: 0; /* cite: 38 */
+            width: 100%; /* cite: 38 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent,
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow {
+            margin: 0 0 20px 0; /* cite: 39 */
+            width: 100%; /* cite: 39 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow {
+            float: left; /* cite: 40 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent.horozintalForm {
+            margin: 0; /* cite: 41 */
+            padding: 0 0 20px 0; /* cite: 41 */
+            width: 100%; /* cite: 41 */
+            height: auto; /* cite: 42 */
+            float: left; /* cite: 42 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow {
+            margin: 0 0 10px 0; /* cite: 43 */
+            width: 100%; /* cite: 43 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow.ml-last-item {
+            margin: 0; /* cite: 44 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow.ml-formfieldHorizintal {
+            margin: 0; /* cite: 45 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input {
+            background-color: #ffffff !important; /* cite: 46 */
+            color: #333333 !important; /* cite: 46 */
+            border-color: #cccccc; /* cite: 46 */
+            border-radius: 4px !important; /* cite: 47 */
+            border-style: solid !important; /* cite: 47 */
+            border-width: 1px !important; /* cite: 47 */
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* cite: 47 */
+            font-size: 14px !important; /* cite: 47 */
+            height: auto; /* cite: 47 */
+            line-height: 21px !important; /* cite: 47 */
+            margin-bottom: 0; /* cite: 48 */
+            margin-top: 0; /* cite: 48 */
+            margin-left: 0; /* cite: 48 */
+            margin-right: 0; /* cite: 48 */
+            padding: 10px 10px !important; /* cite: 48 */
+            width: 100% !important; /* cite: 48 */
+            box-sizing: border-box !important; /* cite: 48 */
+            max-width: 100% !important; /* cite: 48 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input::-webkit-input-placeholder,
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::-webkit-input-placeholder { color: #333333; /* cite: 49 */
         }
 
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before {
-            border-radius: 4px!important;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input::-moz-placeholder,
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::-moz-placeholder { color: #333333; /* cite: 50 */
         }
 
-
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type=checkbox]:checked~.label-description::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox input[type=checkbox]:checked~.label-description::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input:checked~.custom-control-label::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input:checked~.custom-control-label::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox input[type=checkbox]:checked~.label-description::after {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input:-ms-input-placeholder,
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:-ms-input-placeholder { color: #333333; /* cite: 51 */
         }
 
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input:checked~.custom-control-label::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input:checked~.custom-control-label::after {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input:-moz-placeholder,
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:-moz-placeholder { color: #333333; /* cite: 52 */
         }
 
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input:checked~.custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-input:checked~.custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input:checked~.custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input:checked~.custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox input[type=checkbox]:checked~.label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox input[type=checkbox]:checked~.label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type=checkbox]:checked~.label-description::before {
-            border-color: #000000!important;
-            background-color: #000000!important;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow textarea, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow textarea {
+            background-color: #ffffff !important; /* cite: 53 */
+            color: #333333 !important; /* cite: 53 */
+            border-color: #cccccc; /* cite: 53 */
+            border-radius: 4px !important; /* cite: 54 */
+            border-style: solid !important; /* cite: 54 */
+            border-width: 1px !important; /* cite: 54 */
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* cite: 54 */
+            font-size: 14px !important; /* cite: 54 */
+            height: auto; /* cite: 54 */
+            line-height: 21px !important; /* cite: 54 */
+            margin-bottom: 0; /* cite: 55 */
+            margin-top: 0; /* cite: 55 */
+            padding: 10px 10px !important; /* cite: 55 */
+            width: 100% !important; /* cite: 55 */
+            box-sizing: border-box !important; /* cite: 55 */
+            max-width: 100% !important; /* cite: 55 */
         }
 
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::after {
-            top: 2px;
-            box-sizing: border-box;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before {
+              border-color: #cccccc!important; /* cite: 56 */
+            background-color: #ffffff!important; /* cite: 56 */
         }
 
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before {
-            position: absolute;
-            top: 4px;
-            left: -1.5rem;
-            display: block;
-            width: 16px;
-            height: 16px;
-            pointer-events: none;
-            content: "";
-            background-color: #ffffff;
-            border: #adb5bd solid 1px;
-            border-radius: 50%;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input.custom-control-input[type="checkbox"]{
+            box-sizing: border-box; /* cite: 57 */
+            padding: 0; /* cite: 57 */
+            position: absolute; /* cite: 57 */
+            z-index: -1; /* cite: 57 */
+            opacity: 0; /* cite: 57 */
+            margin-top: 5px; /* cite: 58 */
+            margin-left: -1.5rem; /* cite: 58 */
+            overflow: visible; /* cite: 58 */
         }
 
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::after {
-            position: absolute;
-            top: 0px!important;
-            left: -1.5rem;
-            display: block;
-            width: 1rem;
-            height: 1rem;
-            content: "";
-        }
-
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
-            position: absolute;
-            top: 0px!important;
-            left: -1.5rem;
-            display: block;
-            width: 1rem;
-            height: 1rem;
-            content: "";
-        }
-
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-radio .custom-control-label::after {
-            background: no-repeat 50%/50% 50%;
-        }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-checkbox .custom-control-label::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
-            background: no-repeat 50%/50% 50%;
-        }
-
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-control, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-control {
-            position: relative;
-            display: block;
-            min-height: 1.5rem;
-            padding-left: 1.5rem;
-        }
-
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-input, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input {
-            position: absolute;
-            z-index: -1;
-            opacity: 0;
-            box-sizing: border-box;
-            padding: 0;
-        }
-
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label {
-            color: #000000;
-            font-size: 12px!important;
-            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-            line-height: 22px;
-            margin-bottom: 0;
-            position: relative;
-            vertical-align: top;
-            font-style: normal;
-            font-weight: 700;
-        }
-
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-select, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-select {
-            background-color: #ffffff !important;
-            color: #333333 !important;
-            border-color: #cccccc;
-            border-radius: 4px !important;
-            border-style: solid !important;
-            border-width: 1px !important;
-            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-            font-size: 14px !important;
-            line-height: 20px !important;
-            margin-bottom: 0;
-            margin-top: 0;
-            padding: 10px 28px 10px 12px !important;
-            width: 100% !important;
-            box-sizing: border-box !important;
-            max-width: 100% !important;
-            height: auto;
-            display: inline-block;
-            vertical-align: middle;
-            background: url('https://assets.mlcdn.com/ml/images/default/dropdown.svg') no-repeat right .75rem center/8px 10px;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before {
+            border-radius: 4px!important; /* cite: 59 */
         }
 
 
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow {
-            height: auto;
-            width: 100%;
-            float: left;
-        }
-        .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal { width: 70%; float: left; }
-        .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal { width: 30%; float: left; }
-        .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal.labelsOn { padding-top: 25px; }
-        .ml-form-formContent.horozintalForm .mlhorizontal-fields { box-sizing: border-box; float: left; padding-right: 10px; }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input {
-            background-color: #ffffff;
-            color: #333333;
-            border-color: #cccccc;
-            border-radius: 4px;
-            border-style: solid;
-            border-width: 1px;
-            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-            font-size: 14px;
-            line-height: 20px;
-            margin-bottom: 0;
-            margin-top: 0;
-            padding: 10px 10px;
-            width: 100%;
-            box-sizing: border-box;
-            overflow-y: initial;
-        }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button {
-            background-color: #000000 !important;
-            border-color: #000000;
-            border-style: solid;
-            border-width: 1px;
-            border-radius: 4px;
-            box-shadow: none;
-            color: #ffffff !important;
-            cursor: pointer;
-            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-            font-size: 14px !important;
-            font-weight: 700;
-            line-height: 20px;
-            margin: 0 !important;
-            padding: 10px !important;
-            width: 100%;
-            height: auto;
-        }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover {
-            background-color: #333333 !important;
-            border-color: #333333 !important;
-        }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type="checkbox"] {
-            box-sizing: border-box;
-            padding: 0;
-            position: absolute;
-            z-index: -1;
-            opacity: 0;
-            margin-top: 5px;
-            margin-left: -1.5rem;
-            overflow: visible;
-        }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description {
-            color: #000000;
-            display: block;
-            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-            font-size: 12px;
-            text-align: left;
-            margin-bottom: 0;
-            position: relative;
-            vertical-align: top;
-        }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label {
-            font-weight: normal;
-            margin: 0;
-            padding: 0;
-            position: relative;
-            display: block;
-            min-height: 24px;
-            padding-left: 24px;
-
-        }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label a {
-            color: #000000;
-            text-decoration: underline;
-        }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label p {
-            color: #000000 !important;
-            font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
-            font-size: 12px !important;
-            font-weight: normal !important;
-            line-height: 18px !important;
-            padding: 0 !important;
-            margin: 0 5px 0 0 !important;
-        }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label p:last-child {
-            margin: 0;
-        }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit {
-            margin: 0 0 20px 0;
-            float: left;
-            width: 100%;
-        }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
-            background-color: #000000 !important;
-            border: none !important;
-            border-radius: 4px !important;
-            box-shadow: none !important;
-            color: #ffffff !important;
-            cursor: pointer;
-            font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
-            font-size: 14px !important;
-            font-weight: 700 !important;
-            line-height: 21px !important;
-            height: auto;
-            padding: 10px !important;
-            width: 100% !important;
-            box-sizing: border-box !important;
-        }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button.loading {
-            display: none;
-        }
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover {
-            background-color: #333333 !important;
-            border-color: #333333 !important;
-        }
-        .ml-subscribe-close {
-            width: 30px;
-            height: 30px;
-            background: url('https://assets.mlcdn.com/ml/images/default/modal_close.png') no-repeat;
-            background-size: 30px;
-            cursor: pointer;
-            margin-top: -10px;
-            margin-right: -10px;
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-        .ml-error input, .ml-error textarea, .ml-error select {
-            border-color: red!important;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type=checkbox]:checked~.label-description::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox input[type=checkbox]:checked~.label-description::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input:checked~.custom-control-label::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input:checked~.custom-control-label::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox input[type=checkbox]:checked~.label-description::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e"); /* cite: 60 */
         }
 
-        .ml-error .custom-checkbox-radio-list {
-            border: 1px solid red !important;
-            border-radius: 4px;
-            padding: 10px;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input:checked~.custom-control-label::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input:checked~.custom-control-label::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e"); /* cite: 61 */
         }
 
-        .ml-error .label-description,
-        .ml-error .label-description p,
-        .ml-error .label-description p a,
-        .ml-error label:first-child {
-            color: #ff0000 !important;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input:checked~.custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-input:checked~.custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input:checked~.custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input:checked~.custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox input[type=checkbox]:checked~.label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox input[type=checkbox]:checked~.label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type=checkbox]:checked~.label-description::before  {
+              border-color: #000000!important; /* cite: 62 */
+            background-color: #000000!important; /* cite: 62 */
         }
 
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow.ml-error .label-description p,
-        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow.ml-error .label-description p:first-letter {
-            color: #ff0000 !important;
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label::after {
+               top: 2px; /* cite: 63 */
+            box-sizing: border-box; /* cite: 63 */
         }
-        @media only screen and (max-width: 400px){
 
-            .ml-form-embedWrapper.embedDefault, .ml-form-embedWrapper.embedPopup { width: 100%!important; }
-            .ml-form-formContent.horozintalForm { float: left!important; }
-            .ml-form-formContent.horozintalForm .ml-form-horizontalRow { height: auto!important; width: 100%!important; float: left!important; }
-            .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal { width: 100%!important; }
-            .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal { width: 100%!important; }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
+               top: 0px!important; /* cite: 64 */
+            box-sizing: border-box!important; /* cite: 64 */
         }
+
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
+            top: 0px!important; /* cite: 65 */
+            box-sizing: border-box!important; /* cite: 65 */
+        }
+
+           #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::after {
+                top: 0px!important; /* cite: 66 */
+            box-sizing: border-box!important; /* cite: 66 */
+            position: absolute; /* cite: 66 */
+            left: -1.5rem; /* cite: 66 */
+            display: block; /* cite: 66 */
+            width: 1rem; /* cite: 66 */
+            height: 1rem; /* cite: 67 */
+            content: ""; /* cite: 67 */
+        }
+
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before {
+            top: 0px!important; /* cite: 68 */
+            box-sizing: border-box!important; /* cite: 68 */
+        }
+
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-control-label::before {
+              position: absolute; /* cite: 69 */
+            top: 4px; /* cite: 69 */
+              left: -1.5rem; /* cite: 69 */
+              display: block; /* cite: 69 */
+              width: 16px; /* cite: 69 */
+              height: 16px; /* cite: 69 */
+              pointer-events: none; /* cite: 69 */
+              content: ""; /* cite: 69 */
+              background-color: #ffffff; /* cite: 70 */
+              border: #adb5bd solid 1px; /* cite: 70 */
+            border-radius: 50%; /* cite: 70 */
+        }
+
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-control-label::after {
+              position: absolute; /* cite: 71 */
+            top: 2px!important; /* cite: 71 */
+              left: -1.5rem; /* cite: 71 */
+              display: block; /* cite: 71 */
+              width: 1rem; /* cite: 71 */
+              height: 1rem; /* cite: 72 */
+              content: ""; /* cite: 72 */
+        }
+
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::before, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before {
+              position: absolute; /* cite: 73 */
+            top: 4px; /* cite: 73 */
+              left: -1.5rem; /* cite: 73 */
+              display: block; /* cite: 73 */
+              width: 16px; /* cite: 73 */
+              height: 16px; /* cite: 73 */
+              pointer-events: none; /* cite: 73 */
+              content: ""; /* cite: 73 */
+              background-color: #ffffff; /* cite: 73 */
+              border: #adb5bd solid 1px; /* cite: 74 */
+            border-radius: 50%; /* cite: 74 */
+        }
+
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::after {
+              position: absolute; /* cite: 75 */
+            top: 0px!important; /* cite: 75 */
+              left: -1.5rem; /* cite: 75 */
+              display: block; /* cite: 75 */
+              width: 1rem; /* cite: 75 */
+              height: 1rem; /* cite: 76 */
+              content: ""; /* cite: 76 */
+        }
+
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
+              position: absolute; /* cite: 77 */
+            top: 0px!important; /* cite: 77 */
+              left: -1.5rem; /* cite: 77 */
+              display: block; /* cite: 77 */
+              width: 1rem; /* cite: 77 */
+              height: 1rem; /* cite: 78 */
+              content: ""; /* cite: 78 */
+        }
+
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-radio .custom-control-label::after {
+              background: no-repeat 50%/50% 50%; /* cite: 79 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .custom-checkbox .custom-control-label::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-interestGroupsRow .ml-form-interestGroupsRowCheckbox .label-description::after, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
+              background: no-repeat 50%/50% 50%; /* cite: 80 */
+        }
+
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-control, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-control {
+            position: relative; /* cite: 81 */
+            display: block; /* cite: 81 */
+            min-height: 1.5rem; /* cite: 81 */
+            padding-left: 1.5rem; /* cite: 81 */
+        }
+
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-input, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-input, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-input, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-input {
+              position: absolute; /* cite: 82 */
+            z-index: -1; /* cite: 82 */
+              opacity: 0; /* cite: 82 */
+              box-sizing: border-box; /* cite: 82 */
+              padding: 0; /* cite: 82 */
+        }
+
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-radio .custom-control-label, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-radio .custom-control-label, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-checkbox .custom-control-label, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-checkbox .custom-control-label {
+              color: #000000; /* cite: 83 */
+            font-size: 12px!important; /* cite: 83 */
+              font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* cite: 83 */
+              line-height: 22px; /* cite: 84 */
+              margin-bottom: 0; /* cite: 84 */
+              position: relative; /* cite: 84 */
+              vertical-align: top; /* cite: 84 */
+              font-style: normal; /* cite: 84 */
+              font-weight: 700; /* cite: 84 */
+        }
+
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow .custom-select, #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow .custom-select {
+            background-color: #ffffff !important; /* cite: 85 */
+            color: #333333 !important; /* cite: 85 */
+            border-color: #cccccc; /* cite: 85 */
+            border-radius: 4px !important; /* cite: 86 */
+            border-style: solid !important; /* cite: 86 */
+            border-width: 1px !important; /* cite: 86 */
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* cite: 86 */
+            font-size: 14px !important; /* cite: 86 */
+            line-height: 20px !important; /* cite: 87 */
+            margin-bottom: 0; /* cite: 87 */
+            margin-top: 0; /* cite: 87 */
+            padding: 10px 28px 10px 12px !important; /* cite: 87 */
+            width: 100% !important; /* cite: 87 */
+            box-sizing: border-box !important; /* cite: 87 */
+            max-width: 100% !important; /* cite: 87 */
+            height: auto; /* cite: 88 */
+            display: inline-block; /* cite: 88 */
+            vertical-align: middle; /* cite: 88 */
+            background: url('https://assets.mlcdn.com/ml/images/default/dropdown.svg') no-repeat right .75rem center/8px 10px; /* cite: 88 */
+            -webkit-appearance: none; /* cite: 88 */
+            -moz-appearance: none; /* cite: 88 */
+            appearance: none; /* cite: 88 */
+        }
+
+
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow {
+            height: auto; /* cite: 89 */
+            width: 100%; /* cite: 89 */
+            float: left; /* cite: 89 */
+        }
+          .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal { width: 70%; float: left; /* cite: 90 */
+        }
+          .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal { width: 30%; float: left; /* cite: 91 */
+        }
+          .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal.labelsOn { padding-top: 25px; /* cite: 92 */
+        }
+          .ml-form-formContent.horozintalForm .mlhorizontal-fields { box-sizing: border-box; float: left; padding-right: 10px; /* cite: 93 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input {
+            background-color: #ffffff; /* cite: 94 */
+            color: #333333; /* cite: 94 */
+            border-color: #cccccc; /* cite: 94 */
+            border-radius: 4px; /* cite: 94 */
+            border-style: solid; /* cite: 94 */
+            border-width: 1px; /* cite: 94 */
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* cite: 94 */
+            font-size: 14px; /* cite: 95 */
+            line-height: 20px; /* cite: 95 */
+            margin-bottom: 0; /* cite: 95 */
+            margin-top: 0; /* cite: 95 */
+            padding: 10px 10px; /* cite: 95 */
+            width: 100%; /* cite: 95 */
+            box-sizing: border-box; /* cite: 96 */
+            overflow-y: initial; /* cite: 96 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button {
+            background-color: #000000 !important; /* cite: 97 */
+            border-color: #000000; /* cite: 97 */
+            border-style: solid; /* cite: 97 */
+            border-width: 1px; /* cite: 97 */
+            border-radius: 4px; /* cite: 97 */
+            box-shadow: none; /* cite: 97 */
+            color: #ffffff !important; /* cite: 97 */
+            cursor: pointer; /* cite: 98 */
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* cite: 98 */
+            font-size: 14px !important; /* cite: 98 */
+            font-weight: 700; /* cite: 98 */
+            line-height: 20px; /* cite: 98 */
+            margin: 0 !important; /* cite: 99 */
+            padding: 10px !important; /* cite: 99 */
+            width: 100%; /* cite: 99 */
+            height: auto; /* cite: 99 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover {
+            background-color: #333333 !important; /* cite: 100 */
+            border-color: #333333 !important; /* cite: 100 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type="checkbox"] {
+            box-sizing: border-box; /* cite: 101 */
+            padding: 0; /* cite: 101 */
+            position: absolute; /* cite: 101 */
+            z-index: -1; /* cite: 101 */
+            opacity: 0; /* cite: 101 */
+            margin-top: 5px; /* cite: 102 */
+            margin-left: -1.5rem; /* cite: 102 */
+            overflow: visible; /* cite: 102 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description {
+            color: #000000; /* cite: 103 */
+            display: block; /* cite: 103 */
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* cite: 103 */
+            font-size: 12px; /* cite: 103 */
+            text-align: left; /* cite: 103 */
+            margin-bottom: 0; /* cite: 104 */
+            position: relative; /* cite: 104 */
+            vertical-align: top; /* cite: 104 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label {
+            font-weight: normal; /* cite: 105 */
+            margin: 0; /* cite: 105 */
+            padding: 0; /* cite: 105 */
+            position: relative; /* cite: 105 */
+            display: block; /* cite: 106 */
+            min-height: 24px; /* cite: 106 */
+            padding-left: 24px; /* cite: 106 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label a {
+            color: #000000; /* cite: 107 */
+            text-decoration: underline; /* cite: 107 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label p {
+            color: #000000 !important; /* cite: 108 */
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif !important; /* cite: 108 */
+            font-size: 12px !important; /* cite: 108 */
+            font-weight: normal !important; /* cite: 108 */
+            line-height: 18px !important; /* cite: 109 */
+            padding: 0 !important; /* cite: 109 */
+            margin: 0 5px 0 0 !important; /* cite: 109 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label p:last-child {
+            margin: 0; /* cite: 110 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit {
+            margin: 0 0 20px 0; /* cite: 111 */
+            float: left; /* cite: 111 */
+            width: 100%; /* cite: 111 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
+            background-color: #000000 !important; /* cite: 112 */
+            border: none !important; /* cite: 112 */
+            border-radius: 4px !important; /* cite: 112 */
+            box-shadow: none !important; /* cite: 112 */
+            color: #ffffff !important; /* cite: 113 */
+            cursor: pointer; /* cite: 113 */
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif !important; /* cite: 113 */
+            font-size: 14px !important; /* cite: 113 */
+            font-weight: 700 !important; /* cite: 114 */
+            line-height: 21px !important; /* cite: 114 */
+            height: auto; /* cite: 114 */
+            padding: 10px !important; /* cite: 114 */
+            width: 100% !important; /* cite: 114 */
+            box-sizing: border-box !important; /* cite: 114 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button.loading {
+            display: none; /* cite: 115 */
+        }
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover {
+            background-color: #333333 !important; /* cite: 116 */
+        }
+          .ml-subscribe-close {
+            width: 30px; /* cite: 117 */
+            height: 30px; /* cite: 117 */
+            background: url('https://assets.mlcdn.com/ml/images/default/modal_close.png') no-repeat; /* cite: 117 */
+            background-size: 30px; /* cite: 117 */
+            cursor: pointer; /* cite: 117 */
+            margin-top: -10px; /* cite: 117 */
+            margin-right: -10px; /* cite: 118 */
+            position: absolute; /* cite: 118 */
+            top: 0; /* cite: 118 */
+            right: 0; /* cite: 118 */
+        }
+          .ml-error input, .ml-error textarea, .ml-error select {
+            border-color: red!important; /* cite: 119 */
+        }
+
+          .ml-error .custom-checkbox-radio-list {
+            border: 1px solid red !important; /* cite: 120 */
+            border-radius: 4px; /* cite: 120 */
+            padding: 10px; /* cite: 120 */
+        }
+
+          .ml-error .label-description,
+          .ml-error .label-description p,
+          .ml-error .label-description p a,
+          .ml-error label:first-child {
+            color: #ff0000 !important; /* cite: 121 */
+        }
+
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow.ml-error .label-description p,
+          #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow.ml-error .label-description p:first-letter {
+            color: #ff0000 !important; /* cite: 122 */
+        }
+            @media only screen and (max-width: 400px){
+
+        .ml-form-embedWrapper.embedDefault, .ml-form-embedWrapper.embedPopup { width: 100%!important; /* cite: 123 */
+        }
+        .ml-form-formContent.horozintalForm { float: left!important; /* cite: 124 */
+        }
+        .ml-form-formContent.horozintalForm .ml-form-horizontalRow { height: auto!important; width: 100%!important; float: left!important; /* cite: 125 */
+        }
+        .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal { width: 100%!important; /* cite: 126 */
+        }
+        .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal > div { padding-right: 0px!important; padding-bottom: 10px; /* cite: 127 */
+        }
+        .ml-form-formContent.horozintalForm .ml-button-horizontal { width: 100%!important; /* cite: 128 */
+        }
+        .ml-form-formContent.horozintalForm .ml-button-horizontal.labelsOn { padding-top: 0px!important; /* cite: 129 */
+        }
+
+        }
+      
+    #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions { text-align: left; /* cite: 130 */ float: left; width: 100%; }
+    #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent {
+        margin: 0 0 15px 0; /* cite: 131 */
+        text-align: left; /* cite: 131 */
+    }
+    #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent.horizontal {
+        margin: 0 0 15px 0; /* cite: 132 */
+    }
+    #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent h4 {
+        color: #000000; /* cite: 133 */
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* cite: 133 */
+        font-size: 12px; /* cite: 133 */
+        font-weight: 700; /* cite: 134 */
+        line-height: 18px; /* cite: 134 */
+        margin: 0 0 10px 0; /* cite: 134 */
+        word-break: break-word; /* cite: 134 */
+    }
+    #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent p {
+        color: #000000; /* cite: 135 */
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* cite: 135 */
+        font-size: 12px; /* cite: 135 */
+        line-height: 18px; /* cite: 136 */
+        margin: 0 0 10px 0; /* cite: 136 */
+    }
+
+    #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent.privacy-policy p {
+        color: #000000; /* cite: 137 */
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* cite: 137 */
+        font-size: 12px; /* cite: 137 */
+        line-height: 22px; /* cite: 138 */
+        margin: 0 0 10px 0; /* cite: 138 */
+    }
+
+    #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent.privacy-policy p a {
+        color: #000000; /* cite: 139 */
+    }
+
+    #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent p:last-child {
+        margin: 0 0 15px 0; /* cite: 142 */
+    }
+    #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptions {
+        margin: 0; /* cite: 143 */
+        padding: 0; /* cite: 143 */
+    }
+    #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox {
+        margin: 0 0 10px 0; /* cite: 144 */
+    }
+    #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox:last-child {
+        margin: 0; /* cite: 145 */
+    }
+    #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox label {
+        font-weight: normal; /* cite: 146 */
+        margin: 0; /* cite: 146 */
+        padding: 0; /* cite: 146 */
+        position: relative; /* cite: 146 */
+        display: block; /* cite: 147 */
+        min-height: 24px; /* cite: 147 */
+        padding-left: 24px; /* cite: 147 */
+    }
+    #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description {
+        color: #000000; /* cite: 148 */
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* cite: 148 */
+        font-size: 12px; /* cite: 148 */
+        line-height: 18px; /* cite: 149 */
+        text-align: left; /* cite: 149 */
+        margin-bottom: 0; /* cite: 149 */
+        position: relative; /* cite: 149 */
+        vertical-align: top; /* cite: 149 */
+        font-style: normal; /* cite: 149 */
+        font-weight: 700; /* cite: 149 */
+    }
+    #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .description {
+        color: #000000; /* cite: 150 */
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* cite: 150 */
+        font-size: 12px; /* cite: 150 */
+        font-style: italic; /* cite: 150 */
+        font-weight: 400; /* cite: 150 */
+        line-height: 18px; /* cite: 151 */
+        margin: 5px 0 0 0; /* cite: 151 */
+    }
+    #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox input[type="checkbox"] {
+        box-sizing: border-box; /* cite: 152 */
+        padding: 0; /* cite: 152 */
+        position: absolute; /* cite: 152 */
+        z-index: -1; /* cite: 152 */
+        opacity: 0; /* cite: 152 */
+        margin-top: 5px; /* cite: 153 */
+        margin-left: -1.5rem; /* cite: 153 */
+        overflow: visible; /* cite: 153 */
+    }
+    #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedMailerLite-GDPR {
+        padding-bottom: 20px; /* cite: 154 */
+    }
+    #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedMailerLite-GDPR p {
+        color: #000000; /* cite: 155 */
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* cite: 155 */
+        font-size: 10px; /* cite: 155 */
+        line-height: 14px; /* cite: 155 */
+        margin: 0; /* cite: 156 */
+        padding: 0; /* cite: 156 */
+    }
+    #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedMailerLite-GDPR p a {
+        color: #000000; /* cite: 157 */
+        text-decoration: underline; /* cite: 157 */
+
+    }
+    @media (max-width: 768px) {
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent p {
+          font-size: 12px !important; /* cite: 158 */
+          line-height: 18px !important; /* cite: 158 */
+        }
+        #mlb2-26652325.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedMailerLite-GDPR p {
+          font-size: 10px !important; /* cite: 159 */
+          line-height: 14px !important; /* cite: 159 */
+        }
+    }
     </style>
 </head>
 <body>
@@ -786,8 +860,7 @@
                         ✨ Generate Product Descriptions with AI ✨
                     </h3>
                     <p class="text-md text-gray-700 mb-6 text-center">
-                        See how AURORA9's AI can craft compelling product descriptions instantly.
-                        Just provide a few keywords!
+                        See how AURORA9's AI can craft compelling product descriptions instantly. Just provide a few keywords!
                     </p>
                     <div class="flex flex-col gap-4">
                         <textarea
@@ -813,7 +886,7 @@
                     </div>
                     <div id="errorMessage" class="mt-4 text-red-600 text-center hidden"></div>
                 </div>
-                </div>
+            </div>
 
             <div class="mb-16">
                 <h3 class="text-2xl sm:text-3xl font-bold mb-6 text-indigo-700">SEAMLESS MARKETPLACE INTEGRATION</h3>
@@ -878,48 +951,58 @@
                 Don’t get buried in manual tasks. Join our waiting list to be notified when AURORA9 goes live and start your autonomous e-commerce journey today.
             </p>
 
-            <div id="mlb2-26652325" class="ml-form-embedContainer ml-form-align-center">
-                <div class="ml-form-embedWrapper embedForm">
-                    <div class="ml-form-embedBody ml-form-embedBodyHorizontal">
-                        <div class="ml-form-embedContent">
+            <div id="mlb2-26652325" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-26652325"> [cite: 167]
+              <div class="ml-form-align-center "> [cite: 167]
+                <div class="ml-form-embedWrapper embedForm"> [cite: 167]
+                  <div class="ml-form-embedBody ml-form-embedBodyDefault row-form"> [cite: 168]
+                    <div class="ml-form-embedContent" style=" "> [cite: 168]
+                        <h4>Join Our Waiting List</h4> [cite: 168]
+                        <p>Be the first to know! Sign up for launch notifications from AURORA9.</p> [cite: 169]
+                      </div>
+                    <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/1561600/forms/155870684527986630/subscribe" data-code="" method="post" target="_blank"> [cite: 169]
+                      <div class="ml-form-formContent"> [cite: 170]
+                          <div class="ml-form-fieldRow ml-last-item"> [cite: 170]
+                            <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required"> [cite: 171]
+                              <input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email"> [cite: 171]
                             </div>
-                        <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/363842/forms/26652325/subscribe" data-v-230a473a="" method="post" target="_blank">
-                            <div class="ml-form-formContent horozintalForm">
-                                <div class="ml-form-horizontalRow">
-                                    <div class="ml-input-horizontal">
-                                        <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
-                                            <input type="email" class="form-control" data-inputmask="" id="mailerlite-email" name="fields[email]" placeholder="Enter your email address" autocomplete="email" required>
-                                        </div>
-                                    </div>
-                                    <div class="ml-button-horizontal">
-                                        <button type="submit" class="primary-cta cta-button">Join Waiting List</button>
-                                        <button disabled="disabled" style="display: none;" type="button" class="loading">
-                                            <div class="ml-form-embedSubmitLoad"></div>
-                                            <span class="sr-only">Loading...</span>
-                                        </button>
-                                    </div>
-                                </div>
+                          </div>
+                      </div>
+                      <div class="ml-form-embedPermissions" style=""> [cite: 175]
+                          <div class="ml-form-embedPermissionsContent default privacy-policy"> [cite: 176]
+                                  <p>You can unsubscribe anytime. For more details, review our Privacy Policy.</p> [cite: 177]
                             </div>
-                            <input type="hidden" name="ml-submit" value="1">
-                            <input type="hidden" name="anticsrf" value="true">
-                        </form>
-                    </div>
-                    <div class="ml-form-successBody" style="display: none">
-                        <div class="ml-form-successContent">
-                            <h4>Thank you!</h4>
-                            <p>Your submission has been received.</p>
-                        </div>
-                    </div>
+                          </div>
+                      <input type="hidden" name="ml-submit" value="1"> [cite: 178]
+                      <div class="ml-form-embedSubmit"> [cite: 179]
+                            <button type="submit" class="primary">Subscribe</button> [cite: 179]
+                        <button disabled="disabled" style="display: none;" type="button" class="loading"> [cite: 180]
+                          <div class="ml-form-embedSubmitLoad"></div> [cite: 180]
+                          <span class="sr-only">Loading...</span> [cite: 181]
+                        </button>
+                      </div>
+                      <input type="hidden" name="anticsrf" value="true"> [cite: 181]
+                    </form>
+                  </div>
+                  <div class="ml-form-successBody row-success" style="display: none"> [cite: 182]
+                    <div class="ml-form-successContent"> [cite: 182]
+                        <h4>Thank you!</h4> [cite: 182]
+                        <p>You have successfully joined our subscriber list.</p> [cite: 182]
+                      </div>
+                  </div>
                 </div>
+              </div>
             </div>
-            <script>
-                function ml_webform_success_26652325() {
-                    var r = ml_jQuery || jQuery;
-                    r(".ml-block-form").hide(), r(".ml-form-successBody").show()
+            <script> [cite: 183]
+                function ml_webform_success_26652325() { [cite: 183]
+                    var $ = ml_jQuery || jQuery; [cite: 183]
+                    $('.ml-subscribe-form-26652325 .row-success').show(); [cite: 183]
+                    $('.ml-subscribe-form-26652325 .row-form').hide(); [cite: 184]
                 }
             </script>
-            <img src="https://assets.mlcdn.com/images/default/mlsubscribe.png" alt="MailerLite" width="1" height="1" style="max-width:1px; max-height:1px; visibility:hidden; position:absolute; pointer-events:none;">
-            <script src="https://assets.mlcdn.com/scripts/v1/loader.js?groupId=26652325" async="true"></script>
+            <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024" type="text/javascript"></script> [cite: 184]
+            <script> [cite: 184]
+                fetch("https://assets.mailerlite.com/jsonp/1561600/forms/155870684527986630/takel") [cite: 185]
+            </script>
             <p class="text-sm text-gray-500 mt-4">We respect your privacy. No spam, ever.</p>
         </div>
     </section>
@@ -936,7 +1019,7 @@
             </div>
             <div class="flex space-x-4">
                 <a href="https://www.linkedin.com/in/aurora9-ai-agent-09a253364/" target="_blank" class="hover:text-white transition-colors duration-200" aria-label="LinkedIn">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.783-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                 </a>
             </div>
         </div>
@@ -1048,14 +1131,6 @@
     </section>
 
     <script>
-        function ml_webform_success_26652325() {
-            var r = ml_jQuery || jQuery;
-            r(".ml-block-form").hide(), r(".ml-form-successBody").show()
-        }
-    </script>
-    <img src="https://assets.mlcdn.com/images/default/mlsubscribe.png" alt="MailerLite" width="1" height="1" style="max-width:1px; max-height:1px; visibility:hidden; position:absolute; pointer-events:none;">
-    <script src="https://assets.mlcdn.com/scripts/v1/loader.js?groupId=26652325" async="true"></script>
-    <script>
         // AI Product Description Generator Logic
         document.getElementById('generateDescriptionButton').addEventListener('click', async () => {
             const keywords = document.getElementById('productKeywords').value;
@@ -1081,20 +1156,18 @@
             try {
                 let chatHistory = [];
                 chatHistory.push({ role: "user", parts: [{ text: `Generate a compelling product description based on these keywords: ${keywords}` }] });
-
                 const payload = { contents: chatHistory };
                 const apiKey = ""; // Leave as-is for Canvas to provide
                 const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
-
                 const response = await fetch(apiUrl, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(payload)
                 });
-
                 if (!response.ok) {
                     // Handle HTTP errors (e.g., 400, 403, 500)
-                    const errorData = await response.json(); // Attempt to parse error message from response body
+                    const errorData = await response.json();
+                    // Attempt to parse error message from response body
                     const errorMessage = errorData.error?.message || `API request failed with status: ${response.status} ${response.statusText}`;
                     errorMessageDiv.textContent = `Error: ${errorMessage}`;
                     errorMessageDiv.classList.remove('hidden');
@@ -1103,7 +1176,6 @@
                 }
 
                 const result = await response.json();
-
                 if (result.candidates && result.candidates.length > 0 &&
                     result.candidates[0].content && result.candidates[0].content.parts &&
                     result.candidates[0].content.parts.length > 0) {
